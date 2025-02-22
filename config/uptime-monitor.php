@@ -10,11 +10,11 @@ return [
 
         'notifications' => [
             \App\Notifications\UptimeCheckFailed::class => ['telegram', 'slack', 'mail'],
-            \Spatie\UptimeMonitor\Notifications\Notifications\UptimeCheckRecovered::class => [],
+            \App\Notifications\UptimeCheckRecovered::class => ['telegram', 'slack', 'mail'],
             \Spatie\UptimeMonitor\Notifications\Notifications\UptimeCheckSucceeded::class => [],
 
             \App\Notifications\CertificateCheckFailed::class => ['telegram', 'slack', 'mail'],
-            \Spatie\UptimeMonitor\Notifications\Notifications\CertificateExpiresSoon::class => [],
+            \App\Notifications\CertificateExpiresSoon::class => ['telegram', 'slack', 'mail'],
             \Spatie\UptimeMonitor\Notifications\Notifications\CertificateCheckSucceeded::class => [],
         ],
 
