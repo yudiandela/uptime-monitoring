@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Notifications;
+namespace App\Notifications\Certificate;
 
 use App\Traits\NotificationCheckStatus;
 

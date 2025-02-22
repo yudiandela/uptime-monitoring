@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Notifications;
+namespace App\Notifications\Uptime;
 
 use App\Traits\NotificationCheckStatus;
 

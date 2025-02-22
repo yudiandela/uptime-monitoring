@@ -9,13 +9,13 @@ return [
     'notifications' => [
 
         'notifications' => [
-            \App\Notifications\UptimeCheckFailed::class => ['telegram', 'slack', 'mail'],
-            \App\Notifications\UptimeCheckRecovered::class => ['telegram', 'slack', 'mail'],
-            \Spatie\UptimeMonitor\Notifications\Notifications\UptimeCheckSucceeded::class => [],
+            \App\Notifications\Uptime\UptimeCheckFailed::class => ['telegram', 'slack', 'mail'],
+            \App\Notifications\Uptime\UptimeCheckRecovered::class => ['telegram', 'slack', 'mail'],
+            \App\Notifications\Uptime\UptimeCheckSucceeded::class => [],
 
-            \App\Notifications\CertificateCheckFailed::class => ['telegram', 'slack', 'mail'],
-            \App\Notifications\CertificateExpiresSoon::class => ['telegram', 'slack', 'mail'],
-            \Spatie\UptimeMonitor\Notifications\Notifications\CertificateCheckSucceeded::class => [],
+            \App\Notifications\Certificate\CertificateCheckFailed::class => ['telegram', 'slack', 'mail'],
+            \App\Notifications\Certificate\CertificateExpiresSoon::class => ['telegram', 'slack', 'mail'],
+            \App\Notifications\Certificate\CertificateCheckSucceeded::class => [],
         ],
 
         /*
